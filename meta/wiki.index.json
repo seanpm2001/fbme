@@ -1,0 +1,119 @@
+{
+  "ownKey": "wiki",
+  "childrenPages": {"wiki": {
+    "ownKey": "wiki",
+    "childrenPages": {
+      "devGuides": {
+        "ownKey": "devGuides",
+        "childrenPages": {"contributing": {
+          "ownKey": "contributing",
+          "ownPages": [{
+            "reference": {
+              "path": "wiki/devGuides",
+              "baseUrl": "https://jetbrains.github.io/fbme",
+              "fileName": "contributing",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://jetbrains.github.io/fbme/wiki/devGuides/contributing"
+            },
+            "description": "",
+            "title": "Contributing",
+            "content": "<h1 id=\"todo\"><a href=\"#todo\" id=\"todo\" class=\"anchor\"><\/a>TODO<\/h1>\n"
+          }]
+        }},
+        "ownPages": [{
+          "reference": {
+            "path": "wiki",
+            "baseUrl": "https://jetbrains.github.io/fbme",
+            "fileName": "devGuides",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://jetbrains.github.io/fbme/wiki/devGuides"
+          },
+          "description": "",
+          "title": "Dev Guides",
+          "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://jetbrains.github.io/fbme/wiki/devGuides/contributing\">Contributing<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+        }]
+      },
+      "userManual": {
+        "ownKey": "userManual",
+        "childrenPages": {
+          "getting-started": {
+            "ownKey": "getting-started",
+            "ownPages": [{
+              "reference": {
+                "path": "wiki/userManual",
+                "baseUrl": "https://jetbrains.github.io/fbme",
+                "fileName": "getting-started",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://jetbrains.github.io/fbme/wiki/userManual/getting-started"
+              },
+              "next": {
+                "path": "wiki/userManual",
+                "baseUrl": "https://jetbrains.github.io/fbme",
+                "fileName": "blinking-sample",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://jetbrains.github.io/fbme/wiki/userManual/blinking-sample"
+              },
+              "description": "",
+              "title": "Getting Started",
+              "content": "<p>FBME is an open-source cross-platform IDE that run on the Windows, macOS, and Linux operating systems.<\/p>\n<p>Currently, FBME is in pre-release development. You can give it a try by dowloading on of latest builds:<\/p>\n<ul>\n<li><a href=\"https://teamcity.jetbrains.com/guestAuth/repository/download/MPS_Fbme_PublishArtifacts/.lastPinned/fbme-%7Bbuild.number%7D.win.zip\">Windows<\/a><\/li>\n<li><a href=\"https://teamcity.jetbrains.com/guestAuth/repository/download/MPS_Fbme_PublishArtifacts/.lastPinned/fbme-%7Bbuild.number%7D.tar.gz\">Linux<\/a><\/li>\n<li><a href=\"https://teamcity.jetbrains.com/guestAuth/repository/download/MPS_Fbme_PublishArtifacts/.lastPinned/fbme-%7Bbuild.number%7D.macos.zip\">Mac OS<\/a><\/li>\n<\/ul>\n<h4 id=\"new-project\"><a href=\"#new-project\" id=\"new-project\" class=\"anchor\"><\/a>New project<\/h4>\n<p>To start new project, open FBME and choose <code>Create New Project<\/code>.\nIn the project creation wizard, select <code>System Configuration<\/code> and specify name and location for your project.\nAfter pressing <code>OK<\/code>, FBME will create fresh project with a single empty system configuration.<\/p>\n<p>For learning how to develop IEC 61499 systems with FBME follow <a href=\"blinking-sample\">Blinking Sample<\/a> tutorial.<\/p>\n<h4 id=\"export\"><a href=\"#export\" id=\"export\" class=\"anchor\"><\/a>Export<\/h4>\n<p>FBME can import project from other IEC 61499 development tools, such as NxtStudio.\nTo import your project from NxtStudio, open FBME and choose <code>Create New Project<\/code>.\nIn the project creation wizard, select <code>Import NxtStudio project<\/code> and specify name and location for your new project,\nas long as location to original NxtStudio project.\nAfter pressing <code>OK<\/code>, FBME will create fresh project with systems and types copied from original project.\nFBME will also automatically update your function blocks to comply with current standard specification.<\/p>\n<h4 id=\"samples\"><a href=\"#samples\" id=\"samples\" class=\"anchor\"><\/a>Samples<\/h4>\n<p>Samples will upcoming in future builds of FBME to make you learning experience of an IDE easier.<\/p>\n"
+            }]
+          },
+          "blinking-sample": {
+            "ownKey": "blinking-sample",
+            "ownPages": [{
+              "reference": {
+                "path": "wiki/userManual",
+                "baseUrl": "https://jetbrains.github.io/fbme",
+                "fileName": "blinking-sample",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://jetbrains.github.io/fbme/wiki/userManual/blinking-sample"
+              },
+              "previous": {
+                "path": "wiki/userManual",
+                "baseUrl": "https://jetbrains.github.io/fbme",
+                "fileName": "getting-started",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://jetbrains.github.io/fbme/wiki/userManual/getting-started"
+              },
+              "description": "",
+              "title": "Blinking Sample",
+              "content": "<p>The tutorial highlights the basic features of the FBME platform.\nDuring the tutorial, we will build a small application and deploy it on a local device of the supported 4diac FORTE runtime environment.<\/p>\n<h3 id=\"create-a-new-project\"><a href=\"#create-a-new-project\" id=\"create-a-new-project\" class=\"anchor\"><\/a>Create a new project<\/h3>\n<p>To start the tutorial, open the FBME platform.\nThe figure below shows the view of the platform on the first start.<\/p>\n<p><img src=\"../../../assets/media/launch.png\" alt=\"\" /><\/p>\n<p>Let's press <code>Create New Project<\/code>.\nYou will be prompted to enter the project name.\nLet's name the project as <em>Blinking Sample<\/em>, choose <code>System Configuration<\/code> project template and name our system as <em>BlinkingSystem<\/em>.<\/p>\n<p>The platform will create a system for us with one contained application called <em>BlinkingSampleApp<\/em>.\nThe main view shows the editor of the created system.<\/p>\n<h3 id=\"define-an-application-network\"><a href=\"#define-an-application-network\" id=\"define-an-application-network\" class=\"anchor\"><\/a>Define an application network<\/h3>\n<p>We can navigate to the created application's network using the editor by selecting the application name and then invoking <em>Cntrl+B<\/em> or <em>Cntrl+MouseClick<\/em>.\nTo define function blocks on the network, we first have to import function block library into our solution.\nFBME ships predefined library with all standard function blocks that are compatible with 4diac FORTE environment.\nWe can import this library by invoking <code>Import Model<\/code> action via <em>Cntrl+M<\/em> and then look for the library called <code>iec61499.4idac.stdlib<\/code> and hit <em>Enter<\/em>.<\/p>\n<p>Let's define our network. Firstly, we have to put required function blocks in the editor.\nWe can use the completion menu to add a new function block on the diagram by double-clicking on the editor's canvas.\nLet's add three functions blocks of types <code>E_CYCLE<\/code>, <code>E_SWITCH<\/code> and <code>E_SR<\/code>.\nThen let's connect events <code>E_CYCLE.EO<\/code> to <code>E_SWITCH.EI<\/code>, <code>E_SWITCH.EO0<\/code> to <code>E_SR.S<\/code>, <code>E_SWITCH.EO1<\/code> to <code>E_SR.R<\/code> and data <code>E_SR.Q<\/code> to <code>E_SWITCH.G<\/code>.<\/p>\n<p>Also, we have to specify that E_CYCLE has to generate events once per second.\nLet's right-click on <code>E_CYCLE.DT<\/code> and choose <code>Add Constant<\/code> action and then specify <code>T#1s<\/code> value.<\/p>\n<p>We should have achieved the following network.<\/p>\n<p><img src=\"../../../assets/media/blinking-app.png\" alt=\"\" /><\/p>\n<h3 id=\"running-the-application\"><a href=\"#running-the-application\" id=\"running-the-application\" class=\"anchor\"><\/a>Running the application<\/h3>\n<p>By design, our application should generate repetitive events on <code>E_SR<\/code> block with switching <code>E_SR.Q<\/code> value from <code>FALSE<\/code> to <code>TRUE<\/code> and back.\nLet's test it by running the designed application our the local 4diac FORTE device.<\/p>\n<p>Firstly, let's return to the editor of our system. Let's create there a declaration of the device that we will use to test our application.\nWe can do it by hitting <em>Enter<\/em> in their currently empty list of the system's devices.<\/p>\n<p>Let's name our device <code>Testee<\/code>, choose its type as <code>FORTE_PC<\/code>.\nWe also need to specify that the device has to be run locally.\nTo do so, let's type <code>(<\/code> on the right side of the device's type name and enter the parameter <code>MGR_ID<\/code> equal to <code>'localhost:61499'<\/code>.\nThat means FBME will look for the device by specified 61499 port to communicate with it.<\/p>\n<p>Let's run the declared device.\nFBME provides facility to run local 4diac FORTE device out of the box.\nLet's configure it by right-clicking on the device and invoking <code>Edit 'Device BlinkingSystem.Testee'<\/code> action.\nIt opens a run configuration window for our device.<\/p>\n<p>Let's specify the path to the 4diac FORTE runtime executable and click <code>Run<\/code> button.\nFBME will run 4diac FORTE and open its console in the dedicated tool window.<\/p>\n<p><img src=\"../../../assets/media/blinking-device.png\" alt=\"\" /><\/p>\n<p>We also have to specify the device's resource on which our application will be deployed.\nLet's add a new resource by hitting <em>Enter<\/em> on the <code>Testee<\/code> 's resource list, name it <code>BlinkyRES<\/code> and select its type as <code>EMB_RES<\/code>.\nNow we have to map our application on the resource, let's right-click on the application and invoke <code>Map to... -&gt; Testee.BlinkyRES<\/code>.<\/p>\n<p><img src=\"../../../assets/media/blinking-system.png\" alt=\"\" /><\/p>\n<p>We have to configure the created resource before deployment.\nLet's open the resource's network (using <em>Cntrl+B<\/em> on the resource's selected name) and connect <code>START.COLD<\/code> and <code>START.WARM<\/code> events to <code>E_CYCLE.START<\/code>.<\/p>\n<p>Now we can deploy the configured resource by right-clicking on the resource and invoking <code>Deploy Resource<\/code> action.\nAt this point, device started to run our application.<\/p>\n<h3 id=\"monitoring-the-application\"><a href=\"#monitoring-the-application\" id=\"monitoring-the-application\" class=\"anchor\"><\/a>Monitoring the application<\/h3>\n<p>To ensure that our application executes correctly, we would like to observe its state over time.\nFortunately, FBME provides the functionality of state monitoring of a running device.<\/p>\n<p>Let's ask FBME to reveal the state of our application's function blocks.\nFirstly, we have to invoke action <code>Enable Watching for Resource<\/code> from the context menu.\nTo expose the state of interested function blocks, we can select then and run action <code>Watch for Selected Function Blocks<\/code> from the context menu.<\/p>\n<p><img src=\"../../../assets/media/blinking-monitor.png\" alt=\"\" /><\/p>\n<h3 id=\"exporting-the-system\"><a href=\"#exporting-the-system\" id=\"exporting-the-system\" class=\"anchor\"><\/a>Exporting the system<\/h3>\n<p>FBME automatically exports edited systems and libraries into the standard XML-format.\nThe designed system should be located at <em>&lt;project_path&gt;/BlinkingSample/models/BlinkingSample.sys<\/em> file path.\nWe can also observe the exported system using <code>File System<\/code> project view.<\/p>\n<p><img src=\"../../../assets/media/blinking-text.png\" alt=\"\" /><\/p>\n"
+            }]
+          }
+        },
+        "ownPages": [{
+          "reference": {
+            "path": "wiki",
+            "baseUrl": "https://jetbrains.github.io/fbme",
+            "fileName": "userManual",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://jetbrains.github.io/fbme/wiki/userManual"
+          },
+          "description": "",
+          "title": "User Manual",
+          "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://jetbrains.github.io/fbme/wiki/userManual/getting-started\">Getting Started<\/a><\/li> \n   <li><a href=\"https://jetbrains.github.io/fbme/wiki/userManual/blinking-sample\">Blinking Sample<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+        }]
+      }
+    },
+    "ownPages": [{
+      "reference": {
+        "path": "",
+        "baseUrl": "https://jetbrains.github.io/fbme",
+        "fileName": "wiki",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://jetbrains.github.io/fbme/wiki"
+      },
+      "description": "",
+      "title": "Wiki",
+      "content": ""
+    }]
+  }}
+}

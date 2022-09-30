@@ -1,0 +1,19 @@
+{
+  "ownKey": "javadoc",
+  "childrenPages": {"docs": {
+    "ownKey": "docs",
+    "ownPages": [{
+      "reference": {
+        "path": "",
+        "baseUrl": "https://jetbrains.github.io/fbme",
+        "fileName": "docs",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://jetbrains.github.io/fbme/docs"
+      },
+      "description": "",
+      "title": "README",
+      "content": "<h1 id=\"fbme\"><a href=\"#fbme\" id=\"fbme\" class=\"anchor\"><\/a>FBME<\/h1>\n<p><strong>FBME<\/strong> (Function Blocks Modelling Environment) is an IDE for IEC 61499 standard built on top of\n<a href=\"https://www.jetbrains.com/mps\">JetBrains MPS<\/a> language workbench.<\/p>\n<h3 id=\"opening-mps-project-first-time\"><a href=\"#opening-mps-project-first-time\" id=\"opening-mps-project-first-time\" class=\"anchor\"><\/a>Opening MPS project first time<\/h3>\n<ul>\n<li>Pre-installed JRE 11 is required<\/li>\n<li>Install <a href=\"https://www.jetbrains.com/mps/download\">JetBrains MPS 2021.3.*<\/a><\/li>\n<li>Run <code>./gradlew build<\/code><\/li>\n<li>Open project with MPS<\/li>\n<li>Configure &quot;source&quot; plugins:\n<ul>\n<li>Invoke <code>Help -&gt; Edit Custom VM Options...<\/code> action<\/li>\n<li>Set <code>idea.plugins.path<\/code> VM option to:\n<pre><code>-Didea.plugins.path=&lt;project-root&gt;/build/src-plugins\n<\/code><\/pre>\n<\/li>\n<\/ul>\n<\/li>\n<li>Restart MPS<\/li>\n<\/ul>\n<h3 id=\"building-the-standalone-ide\"><a href=\"#building-the-standalone-ide\" id=\"building-the-standalone-ide\" class=\"anchor\"><\/a>Building the standalone IDE<\/h3>\n<ul>\n<li>Run <code>./gradlew buildRcpDistrib<\/code><\/li>\n<\/ul>\n"
+    }]
+  }}
+}

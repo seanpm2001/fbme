@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.21.1"/>
+<link rel="icon" href="https://jetbrains.github.io/fbme/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Blinking Sample</title>
+
+
+<meta name="description" content="">
+
+
+
+<link rel="prev" href="https://jetbrains.github.io/fbme/wiki/userManual/getting-started">
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://jetbrains.github.io/fbme/Editorial/afb4745c/assets/css/editorial_main.css"  />
+<link rel="stylesheet" type="text/css" href="https://jetbrains.github.io/fbme/Editorial/afb4745c/assets/css/editorial_orchidCustomizations.css"  />
+<link rel="stylesheet" type="text/css" href="https://jetbrains.github.io/fbme/Editorial/afb4745c/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://jetbrains.github.io/fbme/Editorial/afb4745c/assets/css/custom.css"  />
+<!-- end:inject styles -->
+
+
+
+
+
+<!-- start:debug info -->
+
+<!-- THEME -->
+<!-- Type: Editorial -->
+<!-- Class: com.eden.orchid.editorial.EditorialTheme -->
+
+<!-- PAGE -->
+<!-- Type: wiki -->
+<!-- Class: com.eden.orchid.wiki.pages.WikiPage -->
+<!-- Layout: index -->
+<!-- Resolved Layout: templates/layouts/index.peb -->
+<!-- Page Template: wiki, page -->
+<!-- Resolved Page Template: templates/pages/page.peb -->
+
+<!-- RESOURCE -->
+<!-- Class: com.eden.orchid.api.resources.resource.FileResource -->
+<!-- Source Filename: wiki/userManual/blinking-sample.md -->
+
+<!-- COMPLETE PAGE CONFIGURATION -->
+<script>
+    window.allData = {"reference":{"path":"wiki/userManual","baseUrl":"https://jetbrains.github.io/fbme","fileName":"blinking-sample","extension":"html","usePrettyUrl":true,"link":"https://jetbrains.github.io/fbme/wiki/userManual/blinking-sample"},"previous":{"path":"wiki/userManual","baseUrl":"https://jetbrains.github.io/fbme","fileName":"getting-started","extension":"html","usePrettyUrl":true,"link":"https://jetbrains.github.io/fbme/wiki/userManual/getting-started"},"description":"","title":"Blinking Sample"};
+</script>
+
+<!-- end:debug info -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.21.1","baseUrl":"https://jetbrains.github.io/fbme","environment":"debug","version":"1.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="is-loading">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            
+                <header id="header">
+    <a href="https://jetbrains.github.io/fbme" class="logo">FBME</a>
+    <ul class="icons">
+    
+    
+        <li>
+            <a href="https://github.com/JetBrains/fbme" class="icon fa-github">
+                <span class="label">github</span>
+            </a>
+        </li>
+    
+    
+    </ul>
+</header>
+
+            
+            
+            
+            
+                <section id="pageContent">
+                    <header class="major"><h2>Blinking Sample</h2></header>
+                    <article>
+                        
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <p>The tutorial highlights the basic features of the FBME platform.
+During the tutorial, we will build a small application and deploy it on a local device of the supported 4diac FORTE runtime environment.</p>
+<h3 id="create-a-new-project"><a href="#create-a-new-project" id="create-a-new-project" class="anchor"></a>Create a new project</h3>
+<p>To start the tutorial, open the FBME platform.
+The figure below shows the view of the platform on the first start.</p>
+<p><img src="../../../assets/media/launch.png" alt="" /></p>
+<p>Let's press <code>Create New Project</code>.
+You will be prompted to enter the project name.
+Let's name the project as <em>Blinking Sample</em>, choose <code>System Configuration</code> project template and name our system as <em>BlinkingSystem</em>.</p>
+<p>The platform will create a system for us with one contained application called <em>BlinkingSampleApp</em>.
+The main view shows the editor of the created system.</p>
+<h3 id="define-an-application-network"><a href="#define-an-application-network" id="define-an-application-network" class="anchor"></a>Define an application network</h3>
+<p>We can navigate to the created application's network using the editor by selecting the application name and then invoking <em>Cntrl+B</em> or <em>Cntrl+MouseClick</em>.
+To define function blocks on the network, we first have to import function block library into our solution.
+FBME ships predefined library with all standard function blocks that are compatible with 4diac FORTE environment.
+We can import this library by invoking <code>Import Model</code> action via <em>Cntrl+M</em> and then look for the library called <code>iec61499.4idac.stdlib</code> and hit <em>Enter</em>.</p>
+<p>Let's define our network. Firstly, we have to put required function blocks in the editor.
+We can use the completion menu to add a new function block on the diagram by double-clicking on the editor's canvas.
+Let's add three functions blocks of types <code>E_CYCLE</code>, <code>E_SWITCH</code> and <code>E_SR</code>.
+Then let's connect events <code>E_CYCLE.EO</code> to <code>E_SWITCH.EI</code>, <code>E_SWITCH.EO0</code> to <code>E_SR.S</code>, <code>E_SWITCH.EO1</code> to <code>E_SR.R</code> and data <code>E_SR.Q</code> to <code>E_SWITCH.G</code>.</p>
+<p>Also, we have to specify that E_CYCLE has to generate events once per second.
+Let's right-click on <code>E_CYCLE.DT</code> and choose <code>Add Constant</code> action and then specify <code>T#1s</code> value.</p>
+<p>We should have achieved the following network.</p>
+<p><img src="../../../assets/media/blinking-app.png" alt="" /></p>
+<h3 id="running-the-application"><a href="#running-the-application" id="running-the-application" class="anchor"></a>Running the application</h3>
+<p>By design, our application should generate repetitive events on <code>E_SR</code> block with switching <code>E_SR.Q</code> value from <code>FALSE</code> to <code>TRUE</code> and back.
+Let's test it by running the designed application our the local 4diac FORTE device.</p>
+<p>Firstly, let's return to the editor of our system. Let's create there a declaration of the device that we will use to test our application.
+We can do it by hitting <em>Enter</em> in their currently empty list of the system's devices.</p>
+<p>Let's name our device <code>Testee</code>, choose its type as <code>FORTE_PC</code>.
+We also need to specify that the device has to be run locally.
+To do so, let's type <code>(</code> on the right side of the device's type name and enter the parameter <code>MGR_ID</code> equal to <code>'localhost:61499'</code>.
+That means FBME will look for the device by specified 61499 port to communicate with it.</p>
+<p>Let's run the declared device.
+FBME provides facility to run local 4diac FORTE device out of the box.
+Let's configure it by right-clicking on the device and invoking <code>Edit 'Device BlinkingSystem.Testee'</code> action.
+It opens a run configuration window for our device.</p>
+<p>Let's specify the path to the 4diac FORTE runtime executable and click <code>Run</code> button.
+FBME will run 4diac FORTE and open its console in the dedicated tool window.</p>
+<p><img src="../../../assets/media/blinking-device.png" alt="" /></p>
+<p>We also have to specify the device's resource on which our application will be deployed.
+Let's add a new resource by hitting <em>Enter</em> on the <code>Testee</code> 's resource list, name it <code>BlinkyRES</code> and select its type as <code>EMB_RES</code>.
+Now we have to map our application on the resource, let's right-click on the application and invoke <code>Map to... -&gt; Testee.BlinkyRES</code>.</p>
+<p><img src="../../../assets/media/blinking-system.png" alt="" /></p>
+<p>We have to configure the created resource before deployment.
+Let's open the resource's network (using <em>Cntrl+B</em> on the resource's selected name) and connect <code>START.COLD</code> and <code>START.WARM</code> events to <code>E_CYCLE.START</code>.</p>
+<p>Now we can deploy the configured resource by right-clicking on the resource and invoking <code>Deploy Resource</code> action.
+At this point, device started to run our application.</p>
+<h3 id="monitoring-the-application"><a href="#monitoring-the-application" id="monitoring-the-application" class="anchor"></a>Monitoring the application</h3>
+<p>To ensure that our application executes correctly, we would like to observe its state over time.
+Fortunately, FBME provides the functionality of state monitoring of a running device.</p>
+<p>Let's ask FBME to reveal the state of our application's function blocks.
+Firstly, we have to invoke action <code>Enable Watching for Resource</code> from the context menu.
+To expose the state of interested function blocks, we can select then and run action <code>Watch for Selected Function Blocks</code> from the context menu.</p>
+<p><img src="../../../assets/media/blinking-monitor.png" alt="" /></p>
+<h3 id="exporting-the-system"><a href="#exporting-the-system" id="exporting-the-system" class="anchor"></a>Exporting the system</h3>
+<p>FBME automatically exports edited systems and libraries into the standard XML-format.
+The designed system should be located at <em>&lt;project_path&gt;/BlinkingSample/models/BlinkingSample.sys</em> file path.
+We can also observe the exported system using <code>File System</code> project view.</p>
+<p><img src="../../../assets/media/blinking-text.png" alt="" /></p>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+                    </article>
+                </section>
+            
+        </div>
+        <hr>
+
+        <!-- Page Footer -->
+        <div class="inner">
+    <footer id="footer">
+        <div class="clearfix">
+            
+                <div class="float-left">
+                    <a href="https://jetbrains.github.io/fbme/wiki/userManual/getting-started" class="button special small pill">
+                        <span>&larr;</span> Getting Started
+                    </a>
+                </div>
+            
+            
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form data-orchid-search="">
+                <input type="text" name="query" id="query" placeholder="Search"/>
+            </form>
+            <div class="box" id="search-results" data-orchid-search-results style="display: none;">
+                <b>Search Results</b>
+                <ul></ul>
+            </div>
+            <div class="box" id="search-progress" data-orchid-search-progress style="display: none;">
+                <div class="loader">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <nav id="siteNav" class="menu">
+            <header class="major">
+                <h2>FBME</h2>
+            </header>
+            <ul class="top-level">
+                
+                    
+    
+    <li>
+        <a class="subheader">User Manuals</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://jetbrains.github.io/fbme/wiki/userManual/getting-started">Getting Started</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://jetbrains.github.io/fbme/wiki/userManual/blinking-sample">Blinking Sample</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a class="subheader">Developer Guides</a>
+    </li>
+    
+
+                
+                    
+    
+    <li>
+        <a href="https://jetbrains.github.io/fbme/wiki/devGuides/contributing">Contributing</a>
+    </li>
+    
+
+                
+            </ul>
+        </nav>
+        
+
+        <!-- Section -->
+        <section>
+            <p class="text-center">
+                Currently 1.0. Created with <a href="https://orchid.run">Orchid </a> and <b>Orchid Editorial Theme</b>.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright text-center">&copy; FBME. All rights reserved.<br>Design by <a href="https://html5up.net">HTML5 UP</a></p>
+        </footer>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+<script  src="https://jetbrains.github.io/fbme/Editorial/afb4745c/assets/js/editorial_util.js"></script>
+<script  src="https://jetbrains.github.io/fbme/Editorial/afb4745c/assets/js/editorial_main.js"></script>
+<script  src="https://jetbrains.github.io/fbme/Editorial/afb4745c/assets/js/editorial_orchidCustomizations.js"></script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>
