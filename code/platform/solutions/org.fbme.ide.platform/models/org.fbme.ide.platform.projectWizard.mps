@@ -2,10 +2,10 @@
 <model ref="r:9323096f-e22f-41d1-bc4e-66d2c0d81159(org.fbme.ide.platform.projectWizard)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
@@ -367,33 +367,29 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
       <node concept="3clFbS" id="7OBD32IgdPT" role="3clF47">
-        <node concept="1X3_iC" id="3XwtbdYRhj" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="7OBD32Igfj2" role="8Wnug">
-            <node concept="2YIFZM" id="7OBD32Igfv1" role="3clFbG">
-              <ref role="1Pybhc" to="l5s7:~NewModuleUtil" resolve="NewModuleUtil" />
-              <ref role="37wK5l" to="l5s7:~NewModuleUtil.check(org.jetbrains.mps.openapi.module.SRepository,java.lang.String,java.lang.String,java.lang.String)" resolve="check" />
-              <node concept="10Nm6u" id="7OBD32IgfEP" role="37wK5m" />
-              <node concept="10M0yZ" id="7OBD32Iggpu" role="37wK5m">
-                <ref role="3cqZAo" to="z1c4:~MPSExtentions.DOT_SOLUTION" resolve="DOT_SOLUTION" />
-                <ref role="1PxDUh" to="z1c4:~MPSExtentions" resolve="MPSExtentions" />
+        <node concept="3clFbF" id="7OBD32Igfj2" role="3cqZAp">
+          <node concept="2YIFZM" id="7OBD32Igfv1" role="3clFbG">
+            <ref role="1Pybhc" to="l5s7:~NewModuleUtil" resolve="NewModuleUtil" />
+            <ref role="37wK5l" to="l5s7:~NewModuleUtil.check(jetbrains.mps.project.MPSProject,java.lang.String,java.lang.String,java.lang.String)" resolve="check" />
+            <node concept="10Nm6u" id="7OBD32IgfEP" role="37wK5m" />
+            <node concept="10M0yZ" id="7OBD32Iggpu" role="37wK5m">
+              <ref role="3cqZAo" to="z1c4:~MPSExtentions.DOT_SOLUTION" resolve="DOT_SOLUTION" />
+              <ref role="1PxDUh" to="z1c4:~MPSExtentions" resolve="MPSExtentions" />
+            </node>
+            <node concept="2OqwBi" id="7OBD32IghK_" role="37wK5m">
+              <node concept="37vLTw" id="7OBD32IggPR" role="2Oq$k0">
+                <ref role="3cqZAo" node="7OBD32Ib82W" resolve="mySettings" />
               </node>
-              <node concept="2OqwBi" id="7OBD32IghK_" role="37wK5m">
-                <node concept="37vLTw" id="7OBD32IggPR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7OBD32Ib82W" resolve="mySettings" />
-                </node>
-                <node concept="liA8E" id="7OBD32Ig_8m" role="2OqNvi">
-                  <ref role="37wK5l" to="lz1h:g46k2scpfc" resolve="getModuleName" />
-                </node>
+              <node concept="liA8E" id="7OBD32Ig_8m" role="2OqNvi">
+                <ref role="37wK5l" to="lz1h:g46k2scpfc" resolve="getModuleName" />
               </node>
-              <node concept="2OqwBi" id="7OBD32IgAPj" role="37wK5m">
-                <node concept="37vLTw" id="7OBD32Ig_U8" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7OBD32Ib82W" resolve="mySettings" />
-                </node>
-                <node concept="liA8E" id="7OBD32IgUeH" role="2OqNvi">
-                  <ref role="37wK5l" to="lz1h:g46k2scpfz" resolve="getModuleLocation" />
-                </node>
+            </node>
+            <node concept="2OqwBi" id="7OBD32IgAPj" role="37wK5m">
+              <node concept="37vLTw" id="7OBD32Ig_U8" role="2Oq$k0">
+                <ref role="3cqZAo" node="7OBD32Ib82W" resolve="mySettings" />
+              </node>
+              <node concept="liA8E" id="7OBD32IgUeH" role="2OqNvi">
+                <ref role="37wK5l" to="lz1h:g46k2scpfz" resolve="getModuleLocation" />
               </node>
             </node>
           </node>
